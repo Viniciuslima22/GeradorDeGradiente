@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ 
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.color-change-5x{animation:color-change-5x 30s linear infinite alternate both}
+@keyframes color-change-5x{0%{background:#19dcea}25%{background:#b22cff}50%{background:#ea2222}75%{background:#f5be10}100%{background:#3bd80d}}
+
+ 
+  main {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #232323;
+   
+  }
+ 
+    .anime{animation:anime 1.5s both}
+    @keyframes anime {0%{transform:scale3d(1,1,1)}30%{transform:scale3d(.75,1.25,1)}40%{transform:scale3d(1.25,.75,1)}50%{transform:scale3d(.85,1.15,1)}65%{transform:scale3d(1.05,.95,1)}75%{transform:scale3d(.95,1.05,1)}100%{transform:scale3d(1,1,1)}}
+  
+  h3 {
+    color:#ffff;
+  }
+  .divColors {
+    text-align: center;
+  }
+  input[type="color"] {
+    border: none;
+    background: transparent;
+    width: 80px;
+    height: 40px;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 10px;
+    border: none;
+  }
+  .divDirection > i {
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  .active {
+    color: rgb(248, 238, 238)!important;
+  }
+  button {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #2C73D2;
+    cursor: pointer;
+  }
+  textarea {
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
